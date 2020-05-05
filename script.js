@@ -2,14 +2,12 @@ const printKen = () => {
   console.log("Ninja Ken");
 };
 
-const printMaster = () => {
-  console.log("Guru Domba");
-};
-
+// Tambahkan parameter callback ke function call
 const call = (callback) => {
   console.log("Memanggil function callback.");
+  // Panggil callback function
   callback();
 };
 
-// Ketik ulang argument ini sebagai printMaster dan konfirmasikan output-nya
-call(printMaster);
+// Teruskan printKen sebagai argument dan jalankan function call
+call(printKen);
